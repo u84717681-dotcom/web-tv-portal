@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Global Web TV</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+📺 Global Web TV
+</div>
+
+<div class="search">
+
+<input type="text" id="searchInput"
+placeholder="Search channel...">
+
+</div>
+
+<button class="fullscreen-btn"
+onclick="fullscreenPlayer()">
+Fullscreen
+</button>
+
+</header>
+
+<section class="player-section">
+
+<div class="player-container">
+
+<iframe id="tvPlayer"
+allowfullscreen
+allow="autoplay">
+</iframe>
+
+</div>
+
+</section>
+
+<section class="category-bar">
+
+<button onclick="filterChannels('all')">All</button>
+<button onclick="filterChannels('news')">News</button>
+<button onclick="filterChannels('documentary')">Documentary</button>
+<button onclick="filterChannels('science')">Science</button>
+
+</section>
+
+<section id="channelList"
+class="channels">
+</section>
+
+<script src="channels.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
